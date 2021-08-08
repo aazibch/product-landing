@@ -1,7 +1,94 @@
+:root {
+  --primary-color: #545454;
+  --primary-color-rgb: 84, 84, 84;
+  --primary-button-color: #737373;
+}
+
 body {
+  font-family: 'Times New Roman', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--primary-color);
+  font-family: 'Cinzel', serif;
+}
+
+.navbar {
   font-family: 'Cinzel', serif;
 }
 
 .navbar-brand img {
   width: 13rem;
+}
+
+/* .navbar-light .navbar-nav .nav-link {
+  color: rgba(var(--primary-color-rgb) 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(var(--primary-color-rgb) 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary-color);
+} */
+
+.banner {
+  background-image: url('assets/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__content {
+  max-width: 30rem;
+  background-color: #fff;
+  color: var(--primary-color);
+  box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.55);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.button-primary {
+  background-color: var(--primary-button-color);
+  border-color: var(--primary-button-color);
+  color: #fff;
+}
+
+.button-primary:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.button-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.button-outline-primary:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.why-buy__icon {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: #808080;
 }
