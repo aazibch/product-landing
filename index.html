@@ -33,7 +33,7 @@
               <a class="nav-link" href="#">Why Buy?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#">Advertisement</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Order Now</a>
@@ -43,37 +43,57 @@
       </div>
     </nav>
   </header>
-  <div class="banner p-5">
+  <section class="banner p-5">
     <div class="container-fluid py-5">
       <div class="banner__content p-4">
-        <h1>Because the times are changing</h1>
+        <p class="h1">Because the times are changing</p>
         <p class="fs-5">Minimalist watches for both men and women.</p>
         <button class="btn button-outline-primary btn-lg" type="button">Order Now</button>
       </div>
     </div>
-  </div>
-  <div class="why-buy border-bottom">
+  </section>
+  <section class="why-buy border-bottom">
     <div class="container-fluid text-center">
       <div class="row">
         <div class="col border-end p-5">
           <i class="fas fa-globe-asia why-buy__icon"></i>
-          <h2 class="fs-4">Worldwide Shipping</h2>
+          <h3 class="fs-4">Worldwide Shipping</h3>
           <p>No matter what corner of the globe you're on, we've got you covered.</p>
         </div>
         <div class="col border-end p-5">
           <i class="fas fa-undo why-buy__icon"></i>
-          <h2 class="fs-4">Free Returns</h2>
+          <h3 class="fs-4">Free Returns</h3>
           <p>Change of mind? Return the product anytime. No questions asked.</p>
 
         </div>
         <div class="col p-5">
           <i class="fas fa-certificate why-buy__icon"></i>
-          <h2 class="fs-4">Two-year Warranty</h2>
+          <h3 class="fs-4">Two-year Warranty</h3>
           <p>Get your product replaced in case it doesn't meet your expectations.</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="advertisement border-bottom">
+    <div class="container py-5">
+      <div class="advertisement__container ratio">
+        <iframe id="video" src="https://www.youtube.com/embed/fDqxloJ3ea4" title="Watch Advertisement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <section class="email-updates py-5">
+    <div class="container">
+      <form id="form" class="email-updates-form text-center" action="https://www.freecodecamp.com/email-submit" method="post">
+        <h2 class="h3 mb-4">Get updates via email!</h2>
+        <input type="email" id="email" class="form-control" aria-describedby="email-help" placeholder="Your email">
+        <div id="email-help" class="form-text mb-3">We promise to never share your email with anyone.</div>
+        <input type="submit" id="submit" class="btn button-primary" value="Submit">
+      </form>
+    </div>
+  </section>
+  <section>
+
+  </section>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
