@@ -45,7 +45,7 @@ h6,
 } */
 
 .banner {
-  background-image: url('assets/images/banner.jpg');
+  background-image: url('https://res.cloudinary.com/aazibch/image/upload/v1628601270/Project%20Files/Product%20Landing/banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
