@@ -29,7 +29,7 @@ h6,
 }
 
 .navbar-brand img {
-  width: 13rem;
+  width: 11rem;
 }
 
 /* .navbar-light .navbar-nav .nav-link {
@@ -49,6 +49,7 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 5.5rem;
 }
 
 .banner__content {
@@ -106,7 +107,7 @@ h6,
   margin: 0 auto;
 }
 
-.email-updates-form {
+.newsletter-form {
   max-width: 30rem;
   margin: 0 auto;
 }
@@ -122,4 +123,41 @@ h6,
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.footer {
+  color: #d1d1d1;
+}
+
+.footer a {
+  color: #d1d1d1;
+}
+
+.footer a:hover {
+  color: #b4b4b4;
+}
+
+.footer-top {
+  background-color: #464646;
+}
+
+.policy-copyright {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.policy-copyright li {
+  display: inline-block;
+  border-right: 1px solid rgb(134, 134, 134);
+  padding: 0 0.5rem;
+}
+
+.policy-copyright li:first-child {
+  padding-left: 0;
+}
+
+.policy-copyright li:last-child {
+  border-style: none;
+  padding-right: 0;
 }

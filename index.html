@@ -19,54 +19,62 @@
 
 <body>
   <header id="header" class="border-bottom">
-    <nav class="navbar navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/images/logo.png" id="header-img">
         </a>
-        <nav id="nav-bar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Why Buy?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Advertisement</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Order Now</a>
-            </li>
-          </ul>
-        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-content">
+          <nav id="nav-bar" class="ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-buy">Why Buy?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#advertisement">Advertisement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#newsletter">Newsletter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#order-now">Order Now</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </nav>
   </header>
-  <section class="banner p-5">
+  <section id="home" class="banner p-5">
     <div class="container-fluid py-5">
       <div class="banner__content p-4">
         <p class="h1">Because the times are changing</p>
         <p class="fs-5">Minimalist watches for both men and women.</p>
-        <button class="btn button-outline-primary btn-lg" type="button">Order Now</button>
+        <a class="btn button-outline-primary btn-lg" href="#order-now">Order Now</a>
       </div>
     </div>
   </section>
-  <section class="why-buy border-bottom">
+  <section id="why-buy" class="border-bottom">
     <div class="container-fluid text-center">
       <div class="row">
-        <div class="col border-end p-5">
+        <div class="col-lg-4 border-end p-5 ">
           <i class="fas fa-globe-asia why-buy__icon"></i>
           <h3 class="fs-4">Worldwide Shipping</h3>
           <p>No matter what corner of the globe you're on, we've got you covered.</p>
         </div>
-        <div class="col border-end p-5">
+        <div class="col-lg-4 border-end p-5">
           <i class="fas fa-undo why-buy__icon"></i>
           <h3 class="fs-4">Free Returns</h3>
           <p>Change of mind? Return the product anytime. No questions asked.</p>
 
         </div>
-        <div class="col p-5">
+        <div class="col-lg-4 p-5">
           <i class="fas fa-certificate why-buy__icon"></i>
           <h3 class="fs-4">Two-year Warranty</h3>
           <p>Get your product replaced in case it doesn't meet your expectations.</p>
@@ -74,28 +82,28 @@
       </div>
     </div>
   </section>
-  <section class="advertisement border-bottom">
+  <section id="advertisement" class="advertisement bg-light border-bottom">
     <div class="container py-5">
       <div class="advertisement__container ratio">
         <iframe id="video" src="https://www.youtube.com/embed/fDqxloJ3ea4" title="Watch Advertisement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
-  <section class="email-updates border-bottom">
+  <section id="newsletter" class="border-bottom">
     <div class="container py-5">
-      <form id="form" class="email-updates-form text-center" action="https://www.freecodecamp.com/email-submit" method="post">
-        <h2 class="h3 mb-4">Get updates via email!</h2>
+      <form id="form" class="newsletter-form text-center" action="https://www.freecodecamp.com/email-submit" method="post">
+        <h2 class="h3 mb-4">Get updates via our newsletter!</h2>
         <input type="email" id="email" class="form-control" aria-describedby="email-help" placeholder="Your email">
         <div id="email-help" class="form-text mb-3">We promise to never share your email with anyone.</div>
         <input type="submit" id="submit" class="btn button-primary" value="Submit">
       </form>
     </div>
   </section>
-  <section class="buy-now">
+  <section id="order-now" class="bg-light">
     <div class="container text-center py-5">
       <div class="row">
-        <div class="col">
-          <div class="card product-card mx-auto">
+        <div class="col-lg-6">
+          <div class="card product-card mx-auto mb-5 mb-lg-0">
             <div class="card-header h5">
               Men's
             </div>
@@ -108,7 +116,7 @@
               <a href="#" class="btn button-primary">Order Now</a>
           </div>
         </div>
-        <div class="col">
+        <div class="col-lg-6">
           <div class="card product-card mx-auto">
             <div class="card-header h5">
               Women's
@@ -125,9 +133,32 @@
       </div>
     </div>
   </section>
+  <footer class="footer small">
+    <div class="footer-top">
+      <div class="container-fluid py-4 text-center">
+        <p class="mb-1">Banner photo by <a href="https://unsplash.com/@agebarros?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Agê Barros</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
+        <p class="mb-0">The ad video and watch photos belong to MVMT. This is just a demo project.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-fluid d-flex flex-column align-items-center flex-md-row justify-content-between py-4 bg-dark">
+        <div class="mb-1 mb-md-0">
+          Coded by <a href="https://github.com/aazibch" target="__blank">Aazib Chaudhry</a>.
+        </div>
+        <div>
+          <ul class="mb-0 mx-0 policy-copyright">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>© 2021 Vertigo Wristwatch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 </html>
