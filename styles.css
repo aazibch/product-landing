@@ -49,6 +49,9 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.banner .container-fluid {
   margin-top: 5.5rem;
 }
 
