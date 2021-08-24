@@ -8,10 +8,6 @@ body {
   font-family: 'Times New Roman', serif;
 }
 
-section {
-  scroll-margin-top: 89px;
-}
-
 h1,
 h2,
 h3,
@@ -39,6 +35,10 @@ h6,
 .navbar-toggler:focus {
   box-shadow: none;
   border-color: #808080;
+}
+
+.section {
+  scroll-margin-top: 89px;
 }
 
 .banner {
